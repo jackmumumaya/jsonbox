@@ -2,15 +2,14 @@
   "spider": "",
   "parse": "https://mtjiexi.cc:966/?url=",
   "sites": [
-  {
-  "key": "pansou_source_20240522", 
-  "name": "🏠我的网盘源",
-  "type": 0, 
+ {
+  "key": "pansou_final_fix",
+  "name": "🏠网盘搜索┃中转版",
+  "type": 0,
   "api": "http://192.168.31.160:8011/search",
   "searchable": 1,
   "quickSearch": 1,
-  "filterable": 1,
-  "playUrl": "" 
+  "filterable": 0
 },
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "heimuer", "name": "🍄黑木耳", "type": 1, "api": "https://json.heimuer.xyz/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -60,6 +59,7 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
 
