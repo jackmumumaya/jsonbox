@@ -1,5 +1,7 @@
 {
-  "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/hujunhu/tvbox/main/jar/custom_spider.jar",
+  "spider": "",
+  "wallpaper": "https://bing.ioliu.cn/v1/rand?w=1920&h=1080",
+  "parse": "https://mtjiexi.cc:966/?url=",
   "sites": [
    {
   "key": "pansou_native_direct",
@@ -71,6 +73,7 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
 
