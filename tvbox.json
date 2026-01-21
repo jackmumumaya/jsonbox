@@ -24,6 +24,14 @@
     "pic": "images[0]", 
     "url": "links[0].url" 
   }
+     "rules": [
+    {
+      "host": "pan.quark.cn",
+      "rule": [
+        "quark.cn",
+        "https://pan.quark.cn/s/"
+      ]
+    }
 },
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "heimuer", "name": "🍄黑木耳", "type": 1, "api": "https://json.heimuer.xyz/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -73,6 +81,7 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
 
