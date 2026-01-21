@@ -6,7 +6,7 @@
   "key": "pansou_source_20240522", 
   "name": "🏠我的网盘源",
   "type": 0, 
-  "api": "http://192.168.31.1:8010/search",
+  "api": "http://192.168.31.160:8011/search",
   "searchable": 1,
   "quickSearch": 1,
   "filterable": 1,
@@ -60,6 +60,7 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
 
