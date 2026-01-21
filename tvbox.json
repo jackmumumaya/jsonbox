@@ -12,15 +12,15 @@
   "parse": 0,
   "ext": {
     "kw": "{wd}",
-    "res": "results", // 关键：强制后端返回平铺的 results 数组
+    "res": "results", 
     "src": "all"
   },
   "rule": {
-    "list": "results", // 对应响应中的 results 字段
-    "title": "title",  // 对应消息标题
-    "desc": "source", // 对应来源频道
-    "pic": "images[0]", // 提取第一张图片
-    "url": "links[0].url" // 提取第一个网盘链接
+    "list": "results", 
+    "title": "title",  
+    "desc": "source", 
+    "pic": "images[0]", 
+    "url": "links[0].url" 
   }
 },
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -71,5 +71,6 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
