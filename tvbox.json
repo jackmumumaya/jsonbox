@@ -3,14 +3,24 @@
   "parse": "https://mtjiexi.cc:966/?url=",
   "sites": [
    {
-      "key": "op_proxy",
-      "name": "🏠路由中转┃私有搜",
-      "type": 1,
-      "api": "http://192.168.31.160:8011/search", 
-      "searchable": 1,
-      "quickSearch": 1
-      "filterable": 0
-    },
+  "key": "op_proxy_final",
+  "name": "🐍路由中转┃网盘源",
+  "type": 1, 
+  "api": "http://192.168.31.160:8011/search",
+  "searchable": 1,
+  "quickSearch": 1,
+  "filterable": 0,
+  "ext": {
+    "wd": "{wd}"
+  },
+  "rule": {
+    "list": "list",
+    "title": "vod_name",
+    "desc": "vod_remarks",
+    "pic": "vod_pic",
+    "url": "vod_id"
+  }
+},
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "heimuer", "name": "🍄黑木耳", "type": 1, "api": "https://json.heimuer.xyz/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "ruyi", "name": "🏮如意资源", "type": 1, "api": "https://cj.rycjapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -59,6 +69,7 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
 
