@@ -1,17 +1,24 @@
 {
   "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/hujunhu/tvbox/main/jar/custom_spider.jar",
- "sites": [
+  "sites": [
     {
-      "key": "pansou_native",
-      "name": "🚀局域网直连|原生协议",
-      "type": 1,
-      "api": "http://192.168.31.160:8009/api/search",
+      "key": "pansou_local",
+      "name": "🔍局域网|网盘搜索",
+      "type": 3,
+      "api": "csp_PanSou",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1
-    }
+      "changeable": 0,
+      "ext": {
+        "api": "http://192.168.31.160:8009/api/search",
+        "res": "merge",
+        "src": "all",
+        "cloud_types": ["quark", "ali", "panyun"],
+        "filter": {
+          "exclude": ["预告", "抢先", "广告", "短剧"]
+        }
       }
-    }
+    },
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "heimuer", "name": "🍄黑木耳", "type": 1, "api": "https://json.heimuer.xyz/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "ruyi", "name": "🏮如意资源", "type": 1, "api": "https://cj.rycjapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -59,6 +66,4 @@
     { "name": "proxy", "hosts": ["raw.githubusercontent.com", "googlevideo.com", "cdn.jsdelivr.net"] }
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
-
 }
-
