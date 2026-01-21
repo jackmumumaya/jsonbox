@@ -1,36 +1,14 @@
 {
   "spider": "",
-  "wallpaper": "https://bing.ioliu.cn/v1/rand?w=1920&h=1080",
   "parse": "https://mtjiexi.cc:966/?url=",
   "sites": [
    {
-  "key": "pansou_native_direct",
-  "name": "🔍直连┃私有盘搜",
-  "type": 1,
-  "api": "http://192.168.31.160:8009/api/search",
-  "searchable": 1,
-  "quickSearch": 1,
-  "post": 1, 
-  "parse": 0,
-  "ext": {
-    "kw": "{wd}",
-    "res": "results", 
-    "src": "all"
-  },
-  "rule": {
-    "list": "results", 
-    "title": "title",  
-    "desc": "source", 
-    "pic": "images[0]", 
-    "url": "links[0].url" 
-  }
-     "rules": [
-    {
-      "host": "pan.quark.cn",
-      "rule": [
-        "quark.cn",
-        "https://pan.quark.cn/s/"
-      ]
+      "key": "op_proxy",
+      "name": "🏠路由中转┃私有搜",
+      "type": 1,
+      "api": "http://192.168.31.160:8010/search", 
+      "searchable": 1,
+      "quickSearch": 1
     }
 },
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -81,6 +59,7 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
 
 
