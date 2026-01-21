@@ -1,15 +1,28 @@
 {
   "spider": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/hujunhu/tvbox/main/jar/custom_spider.jar",
   "sites": [
-    {
-      "key": "pansou_direct",
-      "name": "🔍内网直连|无中转",
-      "type": 1,
-      "api": "http://192.168.31.160:8009/api/search",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1
-    },
+   {
+  "key": "pansou_native_direct",
+  "name": "🔍直连┃私有盘搜",
+  "type": 1,
+  "api": "http://192.168.31.160:8009/api/search",
+  "searchable": 1,
+  "quickSearch": 1,
+  "post": 1, 
+  "parse": 0,
+  "ext": {
+    "kw": "{wd}",
+    "res": "results", // 关键：强制后端返回平铺的 results 数组
+    "src": "all"
+  },
+  "rule": {
+    "list": "results", // 对应响应中的 results 字段
+    "title": "title",  // 对应消息标题
+    "desc": "source", // 对应来源频道
+    "pic": "images[0]", // 提取第一张图片
+    "url": "links[0].url" // 提取第一个网盘链接
+  }
+},
     { "key": "dytt", "name": "🎬电影天堂", "type": 1, "api": "http://caiji.dyttzyapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "heimuer", "name": "🍄黑木耳", "type": 1, "api": "https://json.heimuer.xyz/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
     { "key": "ruyi", "name": "🏮如意资源", "type": 1, "api": "https://cj.rycjapi.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1 },
@@ -58,4 +71,5 @@
   ],
   "wallpaper": "https://picsum.photos/1920/1080"
 }
+
 
